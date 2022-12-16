@@ -1,0 +1,47 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 6rem);
+  max-width: 400px;
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  margin: 3vh auto 0 auto;
+  box-shadow: rgb(143, 142, 142);
+}
+
+button {
+  border: 0.5px solid #999;
+  border-radius: 5px;
+  padding: 16px 8px;
+  margin: 2px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 20px;
+  font-weight: 500;
+}
+button:hover {
+  background-color: rgb(190, 189, 189);
+  transition: ease-out 0.5s;
+}
+.equal {
+  grid-column: span 2;
+}
+.ac {
+  grid-column: span 2;
+}
+.display {
+  grid-column: 1 / -1;
+  background-color: black;
+  text-align: right;
+  color: white;
+  padding: 16px 8px 16px 8px;
+  font-size: 20px;
+}
